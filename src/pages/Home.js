@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="home">
       <HeroSection
-        title="Welcome to Oasis Infobyte"
+        title="Welcome to SaRox"
         subtitle="Your one-stop solution for web development, internships, and more!"
       />
     </div>

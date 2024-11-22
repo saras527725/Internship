@@ -25,13 +25,17 @@ body {
     text-decoration: none;
   }
   
-  .footer {
-    text-align: center;
-    padding: 10px 0;
+  footer {
+    position: fixed;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
-  
+
   .hero {
     text-align: center;
     padding: 50px 0;
@@ -74,16 +78,102 @@ body {
 }
 /* Styles specific to the Contact page */
 .contact {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(98, 97, 97, 0.807); 
 }
-.internship-card {
+.contact h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ddd;
-  padding: 20px;
-  margin: 10px;
   border-radius: 5px;
-  background-color: #f9f9f9;
 }
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: -10px;
+}
+
+.internship-card {
+  width: 390px; /* Set the width to be the same for all cards */
+  height: auto; /* Height will adjust automatically based on content */
+  /* text-align: center; */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(136, 136, 232, 0.5); 
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+  margin: 10px;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;/*smooth trnsition for hover*/
+}
+
+.internship-card:hover {
+  transform: translateY(-10px); /* Slight upward shift on hover */
+  box-shadow: 0 4px 8px rgba(48, 48, 234, 0.7); /* Blue shadow on hover */
+}
+
+.internship-card img {
+  width: 140px; /* Set the size of the image */
+  height: 120px; /* Set the height same as width to make it a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits the circle without stretching */
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Keyframes to animate the image */
+@keyframes floating {
+  0% {
+    transform: translateX(0,0px); 
+  }
+  50% {
+    transform: translate(0,15px); 
+  }
+  100% {
+    transform: translate(0,-0px);
+  }
+}
+
 
 .internship-card h2 {
   font-size: 20px;
@@ -93,12 +183,21 @@ body {
 .internship-card p {
   font-size: 16px;
   margin: 5px 0;
+  align-items: center;
 }
 
-.internship-card a {
+.internship-card a {color: #007BFF;
   text-decoration: none;
-  color: #007bff;
+  border: 1px solid #007BFF;
+  padding: 5px 10px;
+  border-radius: 5rem;
+  border-radius: 5px;
 }
+.internship-card a:hover {
+  color: #eae0e0;
+  background-color: #007BFF; /* Highlight link on hover */
+}
+
 .internships {
   padding: 20px;
   text-align: center;
