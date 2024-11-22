@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .service-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+  /* Styles specific to the Home page */
+.home {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+/* Styles specific to the Services page */
+.services {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+/* Styles specific to the Internships page */
+.internships {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+/* Styles specific to the Contact page */
+.contact {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.internship-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.internship-card h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.internship-card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.internship-card a {
+  text-decoration: none;
+  color: #007bff;
+}
+.internships {
+  padding: 20px;
+  text-align: center;
+}
+
+.internship-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.internship-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
