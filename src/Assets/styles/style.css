@@ -1,11 +1,10 @@
-body {
+ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .navbar {
+  }   
+    .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,16 +23,14 @@ body {
     color: white;
     text-decoration: none;
   }
-  
   footer {
-    position: fixed;
+    position: relative; /* Let it flow with the content */
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    left: 0;
-    bottom: 0;
+    padding: 10px 0;
     width: 100%;
+    margin-top: auto;
   }
 
   .hero {
@@ -42,7 +39,12 @@ body {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
   }
-  
+
+  .services {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
   .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -65,18 +67,7 @@ body {
   background-color: #f4f4f4;
   padding: 20px;
 }
-/* Styles specific to the Services page */
-.services {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-/* Styles specific to the Internships page */
-.internships {
-  background-color: #e0e0e0;
-  padding: 20px;
-}
-/* Styles specific to the Contact page */
+
 .contact {
   max-width: 600px;
   margin: 0 auto;
@@ -202,7 +193,6 @@ button:hover {
   padding: 20px;
   text-align: center;
 }
-
 .internship-container {
   display: flex;
   justify-content: center;
